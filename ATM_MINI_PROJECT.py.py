@@ -1,4 +1,4 @@
-# ------------------ ATM PROGRAM ------------------
+--------------- ATM PROGRAM ------------------
 
 balance = 5000
 attempt = 0
@@ -7,9 +7,10 @@ transactions = []
 mobile = 9922125846
 pan = "4307"
 
-pin_code = 1234   # 🔐 original pin (will change after reset)
+pin_code = 1234   
 
-# ------------------ LOGIN ------------------
+-------------- LOGIN ------------------
+
 while True:
 
     while attempt < 3:
@@ -18,7 +19,7 @@ while True:
         if pin == pin_code:
             print("\nLogin successful\n")
 
-            # ------------------ ATM MENU ------------------
+            
             while True:
                 print("\n1. Check Balance")
                 print("2. Deposit")
@@ -68,13 +69,15 @@ while True:
                 else:
                     print("Invalid choice")
 
-            break  # exit menu after successful login
+            break  
 
         else:
             print("Wrong PIN")
             attempt += 1
 
-    # ------------------ PIN RESET ------------------
+   ------------ PIN RESET ------------------
+
+
     if attempt == 3:
         print("\nYour card is blocked")
         print("Start PIN reset process")
@@ -99,4 +102,5 @@ while True:
         break
 
     
+
                 
